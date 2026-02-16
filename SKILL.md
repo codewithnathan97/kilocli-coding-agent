@@ -1,15 +1,18 @@
 ---
 name: kilocli-coding-agent
 description: Run Kilo CLI via background process for programmatic control.
-version: 0.0.4
+version: 0.0.5
 metadata:
   openclaw:
     requires:
-      bins:
+    env:
+        - GITHUB_TOKEN
+    bins:
         - kilo
         - git
         - gh
         - tmux
+    primaryEnv: GITHUB_TOKEN
 ---
 ---
 
@@ -56,9 +59,10 @@ process action:kill sessionId:XXX
 
 ## Kilo CLI
 
-### Building/Creating (use --full-auto or --yolo)
+### Building/Creating (Use Autonomous mode)
+
 ```bash
-bash workdir:~/project background:true command:"kilo run \"Build a snake game with dark theme\""
+bash workdir:~/project background:true command:"kilo run --auto \"Build a snake game with dark theme\""
 ```
 
 ### Reviewing PRs (vanilla, no flags)
