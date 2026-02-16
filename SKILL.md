@@ -1,13 +1,13 @@
 ---
 name: kilocli-coding-agent
 description: Run Kilo CLI via background process for programmatic control.
-version: 0.0.8
+version: 0.0.9
 metadata:
   openclaw:
     requires:
-    env:
+      env:
         - GITHUB_TOKEN
-    bins:
+      bins:
         - kilo
         - git
         - gh

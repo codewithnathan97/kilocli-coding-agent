@@ -1,6 +1,6 @@
 {
   "name": "kilocli-coding-agent",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Run Kilo CLI via background process for programmatic control.",
   "author": "codewithnathan97",
   "license": "MIT",
