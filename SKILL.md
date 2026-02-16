@@ -1,7 +1,7 @@
 ---
 name: kilocli-coding-agent
 description: Run Kilo CLI via background process for programmatic control.
-version: 0.0.5
+version: 0.0.7
 metadata:
   openclaw:
     requires:
